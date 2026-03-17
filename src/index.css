@@ -24,11 +24,11 @@
 
 @keyframes marquee {
   0%   { transform: translateX(0); }
-  100% { transform: translateX(-33.33%); }
+  100% { transform: translateX(-50%); }
 }
 .marquee-inner {
   animation: marquee 20s linear infinite;
-  width: 300%;
+  width: max-content;
   display: flex;
 }
 
