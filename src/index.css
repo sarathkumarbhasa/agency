@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* { cursor: crosshair !important; }
+
+* {
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: #FFE500;
+  color: #0D0D0D;
+}
+
+.text-outlined {
+  -webkit-text-stroke: 3px #0D0D0D;
+  color: transparent;
+}
+.dark .text-outlined {
+  -webkit-text-stroke: 3px #F5F0E8;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-33.33%); }
+}
+.marquee-inner {
+  animation: marquee 20s linear infinite;
+  width: 300%;
+  display: flex;
+}
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #F5F0E8; }
+::-webkit-scrollbar-thumb {
+  background: #0D0D0D;
+  border: 2px solid #F5F0E8;
+  border-radius: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: #F5F0E8;
+  color: #0D0D0D;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  line-height: 1.7;
+  font-variant-numeric: tabular-nums;
+}
+.dark body {
+  background-color: #0D0D0D;
+  color: #F5F0E8;
+}
