@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
               </motion.div>
 
               <motion.h1
-                className="font-display font-bold uppercase tracking-[0.05em] leading-[0.9] mt-4"
+                className="font-display font-bold uppercase tracking-[0.05em] leading-[1.15] mt-8"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.2, ease: 'easeOut', delay: 0.05 }}
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
               </motion.h1>
 
               <motion.p
-                className="font-body text-lg text-brutal-black/70 dark:text-brutal-white/70 mt-6 max-w-lg"
+                className="font-body text-lg text-brutal-black/70 dark:text-brutal-white/70 mt-10 max-w-lg"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.2, ease: 'easeOut', delay: 0.1 }}
@@ -90,8 +90,8 @@ const Hero: React.FC = () => {
               <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-3 bg-[#FFE500]" />
               <div className="absolute bottom-0 left-0 right-0 bg-[#0D0D0D]/80 border-t-2 border-[#FFE500] py-2 overflow-hidden">
                 <div className="marquee-inner">
-                  {[0, 1, 2].map((i) => (
-                    <span key={i} className="flex-shrink-0 w-1/3 font-body text-[10px] text-[#C8C4BB] whitespace-nowrap tracking-[0.2em]">
+                  {[0, 1].map((i) => (
+                    <span key={i} className="flex-shrink-0 font-body text-[10px] text-[#C8C4BB] whitespace-nowrap tracking-[0.2em] px-4">
                       HTML — CSS — REACT — NODE — NEXT — FIGMA — STRIPE — POSTGRES —{' '}
                     </span>
                   ))}
